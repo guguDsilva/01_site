@@ -1,0 +1,410 @@
+/* ==========================================
+   BARBEARIA CORTE SECO - STYLESHEET
+   ========================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f1de;
+}
+
+/* ========== HEADER ========== */
+header {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #f4f1de;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #d4af37;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #e8e8e8;
+    margin-bottom: 20px;
+}
+
+header hr {
+    border: 0;
+    height: 2px;
+    background: #d4af37;
+    margin: 20px 0;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    color: #d4af37;
+}
+
+/* ========== NAVEGAÇÃO ========== */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+nav a {
+    color: #f4f1de;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d4af37;
+    color: #1a1a1a;
+    transform: translateY(-3px);
+}
+
+/* ========== SEÇÕES GERAIS ========== */
+section {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px 20px;
+}
+
+section hr {
+    border: 0;
+    height: 1px;
+    background: #d4af37;
+    margin: 30px 0;
+}
+
+/* ========== TABELA DE SERVIÇOS ========== */
+#servico_preco {
+    text-align: center;
+}
+
+#servico_preco h2 {
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table thead {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #d4af37;
+}
+
+table th {
+    padding: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+table td {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+    transition: background 0.3s ease;
+}
+
+table tbody tr:hover {
+    background-color: #f9f6f0;
+}
+
+table tfoot {
+    background-color: #f4f1de;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+table tfoot th {
+    padding: 15px;
+}
+
+/* ========== SEÇÃO HISTÓRIA ========== */
+#nossa_historia {
+    background: white;
+    border-left: 5px solid #d4af37;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#nossa_historia h2 {
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+#nossa_historia p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+#nossa_historia b,
+#nossa_historia strong {
+    color: #d4af37;
+}
+
+#nossa_historia img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px auto;
+}
+
+/* ========== FORMULÁRIO ========== */
+#agendar_horario {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#agendar_horario h2 {
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+fieldset {
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding: 0 15px;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus {
+    outline: none;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    font-size: 0.95rem;
+}
+
+/* Radio buttons */
+input[type="radio"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+input[type="radio"] + label {
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+}
+
+/* Botões */
+button {
+    background: linear-gradient(135deg, #d4af37 0%, #b8941e 100%);
+    color: #1a1a1a;
+    border: none;
+    padding: 12px 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(212, 175, 55, 0.3);
+}
+
+button[type="reset"] {
+    background: linear-gradient(135deg, #999 0%, #666 100%);
+    color: white;
+}
+
+button[type="reset"]:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== FOOTER ========== */
+footer {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    color: #f4f1de;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+}
+
+footer h2 {
+    color: #d4af37;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer li {
+    margin: 10px 0;
+    font-size: 0.95rem;
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f4f1de;
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+    }
+
+    section {
+        margin: 20px auto;
+        padding: 20px 15px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    table th,
+    table td {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #nossa_historia img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    section {
+        padding: 15px 10px;
+    }
+
+    table th,
+    table td {
+        padding: 8px 5px;
+        font-size: 0.85rem;
+    }
+
+    legend {
+        font-size: 1.1rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input, textarea {
+        font-size: 16px;
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}

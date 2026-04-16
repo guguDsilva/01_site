@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barbearia Corte Seco - Tradição, navalha afiada e o melhor café da região.">
+    <title>MINHA BARBEARIA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+    <header>
+        <h1>Barbearia Corte Seco</h1>
+        <p><em>Tradição, navalha afiada e o melhor café da região</em>.</p>
+        <hr>
+        <h2>MENU</h2>
+        <nav>
+            <ul>
+                <li><a href="#top">Início</a></li>
+                <li><a href="#servico_preco">Serviços e Preços</a></li>
+                <li><a href="#nossa_historia">Nossa História</a></li>
+                <li><a href="#agendar_horario">Agendar Horário</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <section id="servico_preco">
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Tempo de Serviço</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Corte Social</td>
+                    <td>40 minutos</td>
+                    <td>R$ 45,00</td>
+                </tr>
+                <tr>
+                    <td>Barba Completa</td>
+                    <td>30 minutos</td>
+                    <td>R$ 35,00</td>
+                </tr>
+                <tr>
+                    <td>Combo(Cabelo+Barba)</td>
+                    <td>1 hora</td>
+                    <td>R$ 70,00</td>
+                </tr>
+                <tr>
+                    <td>Corte Infantil</td>
+                    <td>30 minutos</td>
+                    <td>R$ 30,00</td>
+                </tr>
+            </tbody>
+           <tfoot><tr><th colspan="3">Tabela de Serviços</th></tr></tfoot>
+        </table>
+    </section>
+
+    <hr>
+
+    <section id="nossa_historia">
+        <h2>Sobre Nós</h2>
+        <p><b>História:</b> "Fundada em 1998 pelo Sr. Antenor, a Corte Seco começou em uma garagem e hoje é referência
+            em
+            estilo clássico. <strong>Nosso foco não é apenas o corte, mas a experiência de uma boa conversa e o cuidado
+                com
+                os detalhes."</strong></p>
+        <img src="./download.jfif" alt="Foto da minha primeira cadeira" width="250" height="250" />
+    </section>
+
+    <hr>
+    <section id="agendar_horario">
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Formulário de Agendamento</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu Nome Aqui" required /><br>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required /><br>
+
+                <label for="data">Data Desejada</label>
+                <input type="date" id="data" name="data" /><br>
+
+                <label for="hora">Horário</label>
+                <input type="time" id="hora" name="hora" /><br>
+
+                <label for="mensagem">Deixe sua mensagem:</label><br>
+                <textarea name="mensagem" id="mensagem" rows="4" placeholder="Sua mensagem" required ></textarea><br>
+
+                <input type="radio" id="Antenor" name="barbeiro" value="Antenor" />
+                <label for="Antenor">Mestre Antenor</label>
+
+                <input type="radio" id="Douglas" name="barbeiro" value="Douglas" />
+                <label for="Douglas">Douglas "Navalha"</label>
+
+                <input type="radio" id="bia" name="barbeiro" value="bia" />
+                <label for="bia">Bia Cortes</label>
+
+            </fieldset><br>
+
+            <button type="submit">Enviar Dados</button>
+            <button type="reset">Limpar Dados</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <h2>Informações Úteis:</h2>
+        <ul>
+            <li>Endereço: Rua das Tesouras, nº 42, Bairro Centro - Cidade Alta.</li>
+            <li>Horário de Funcionamento: Segunda a Sábado, das 09h às 20h.</li>
+            <li><a href="#top">Clique aqui para voltar ao topo da página</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
