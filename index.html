@@ -56,7 +56,11 @@
                     <td>R$ 30,00</td>
                 </tr>
             </tbody>
-           <tfoot><tr><th colspan="3">Tabela de Serviços</th></tr></tfoot>
+            <tfoot>
+                <tr>
+                    <th colspan="3">Tabela de Serviços</th>
+                </tr>
+            </tfoot>
         </table>
     </section>
 
@@ -91,24 +95,40 @@
                 <input type="time" id="hora" name="hora" /><br>
 
                 <label for="mensagem">Deixe sua mensagem:</label><br>
-                <textarea name="mensagem" id="mensagem" rows="4" placeholder="Sua mensagem" required ></textarea><br>
+                <textarea name="mensagem" id="mensagem" rows="4"></textarea><br>
 
-                <input type="radio" id="Antenor" name="barbeiro" value="Antenor" />
-                <label for="Antenor">Mestre Antenor</label>
+                <label for="cabeleleiro">Selecione o barbeiro:</label>
+                <select name="cabeleleiro" id="cabeleleiro">
+                    <option value="">Selecione um barbeiro</option>
+                    <option value="Antenor">Mestre Antenor</option>
+                    <option value="Douglas">Douglas "Navalha"</option>
+                    <option value="Bia">Bia Cortes</option>
+                </select>
 
-                <input type="radio" id="Douglas" name="barbeiro" value="Douglas" />
-                <label for="Douglas">Douglas "Navalha"</label>
+                <div>
+                    <p>Selecione os serviços desejados:</p>
 
-                <input type="radio" id="bia" name="barbeiro" value="bia" />
-                <label for="bia">Bia Cortes</label>
+                    <label for="corte_social">Corte Social</label>
+                    <input type="checkbox" id="corte_social" name="servicos" value="Corte Social">
+                    
+                    <label for="barba_completa">Barba Completa</label>
+                    <input type="checkbox" id="barba_completa" name="servicos" value="Barba Completa">
+    
+                    <label for="combo">Combo (Cabelo + Barba)</label>
+                    <input type="checkbox" id="combo" name="servicos" value="Combo(Cabelo+Barba)">
+                    
+                    <label for="corte_infantil">Corte Infantil</label>
+                    <input type="checkbox" id="corte_infantil" name="servicos" value="Corte Infantil">
+                    
+                </div>
 
             </fieldset><br>
 
             <button type="submit">Enviar Dados</button>
             <button type="reset">Limpar Dados</button>
+
         </form>
     </section>
-
 
     <footer>
         <h2>Informações Úteis:</h2>
