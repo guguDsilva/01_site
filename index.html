@@ -11,13 +11,13 @@
 
 <body id="top">
     <header>
-        <h1>Barbearia Corte Seco</h1>
+        <h1>Hulk Barbearia</h1>
         <p><em>Tradição, navalha afiada e o melhor café da região</em>.</p>
         <hr>
         <h2>MENU</h2>
         <nav>
             <ul>
-                <li><a href="#top">Início</a></li>
+                <li><a href="#Final da Página">Final da Página</a></li>
                 <li><a href="#servico_preco">Serviços e Preços</a></li>
                 <li><a href="#nossa_historia">Nossa História</a></li>
                 <li><a href="#agendar_horario">Agendar Horário</a></li>
@@ -55,6 +55,21 @@
                     <td>30 minutos</td>
                     <td>R$ 30,00</td>
                 </tr>
+                <tr>
+                    <td>Hidratatção</td>
+                    <td>20 minutos</td>
+                    <td>R$ 25,00</td>
+                </tr>
+                <tr>
+                    <td>Barba na Toalha Quente</td>
+                    <td>30 minutos</td>
+                    <td>R$ 40,00</td>
+                </tr>
+                <tr>
+                    <td>Selagem</td>
+                    <td>45 minutos</td>
+                    <td>R$ 50,00</td>
+                </tr>
             </tbody>
             <tfoot>
                 <tr>
@@ -77,27 +92,13 @@
     </section>
 
     <hr>
+
     <section id="agendar_horario">
         <form action="#" method="get">
             <fieldset>
                 <legend>Formulário de Agendamento</legend>
 
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" placeholder="Seu Nome Aqui" required /><br>
-
-                <label for="email">E-mail</label>
-                <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required /><br>
-
-                <label for="data">Data Desejada</label>
-                <input type="date" id="data" name="data" /><br>
-
-                <label for="hora">Horário</label>
-                <input type="time" id="hora" name="hora" /><br>
-
-                <label for="mensagem">Deixe sua mensagem:</label><br>
-                <textarea name="mensagem" id="mensagem" rows="4"></textarea><br>
-
-                <label for="cabeleleiro">Selecione o barbeiro:</label>
+                <label for="cabeleleiro"></label>
                 <select name="cabeleleiro" id="cabeleleiro">
                     <option value="">Selecione um barbeiro</option>
                     <option value="Antenor">Mestre Antenor</option>
@@ -105,22 +106,44 @@
                     <option value="Bia">Bia Cortes</option>
                 </select>
 
-                <div>
+                <div class="lista-servicos">
                     <p>Selecione os serviços desejados:</p>
 
-                    <label for="corte_social">Corte Social</label>
-                    <input type="checkbox" id="corte_social" name="servicos" value="Corte Social">
-                    
-                    <label for="barba_completa">Barba Completa</label>
-                    <input type="checkbox" id="barba_completa" name="servicos" value="Barba Completa">
-    
-                    <label for="combo">Combo (Cabelo + Barba)</label>
-                    <input type="checkbox" id="combo" name="servicos" value="Combo(Cabelo+Barba)">
-                    
-                    <label for="corte_infantil">Corte Infantil</label>
-                    <input type="checkbox" id="corte_infantil" name="servicos" value="Corte Infantil">
-                    
+                    <label class="check-container">Corte Social
+                        <input type="checkbox" id="corte_social" name="servicos" value="Corte Social">
+                    </label>
+                    <label class="check-container">Barba Completa
+                        <input type="checkbox" id="barba_completa" name="servicos" value="Barba Completa">
+                    </label>
+
+                    <label class="check-container">Combo(Cabelo+Barba)
+                        <input type="checkbox" id="combo" name="servicos" value="Combo(Cabelo+Barba)">
+                    </label>
+
+                    <label class="check-container">Corte Infantil
+                        <input type="checkbox" id="corte_infantil" name="servicos" value="Corte Infantil">
+                    </label>
                 </div>
+
+                <hr>
+
+                <legend>Preencha o Cadastro Abaixo para Agenda seu Corte.</legend>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu Nome Aqui" required /><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required /><br>
+
+                <label for="data">Data Desejada:</label>
+                <input type="date" id="data" name="data" /><br>
+
+                <label for="hora">Horário:</label>
+                <input type="time" id="hora" name="hora" /><br>
+
+                <label for="mensagem">Deixe sua mensagem:</label>
+                <textarea name="mensagem" id="mensagem" rows="4"></textarea><br>
+
 
             </fieldset><br>
 
@@ -130,7 +153,7 @@
         </form>
     </section>
 
-    <footer>
+    <footer id="Final da Página">
         <h2>Informações Úteis:</h2>
         <ul>
             <li>Endereço: Rua das Tesouras, nº 42, Bairro Centro - Cidade Alta.</li>

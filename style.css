@@ -240,17 +240,42 @@ textarea {
     font-size: 0.95rem;
 }
 
-/* Radio buttons */
-input[type="radio"] {
-    margin-right: 8px;
+/* Select */
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #f4f1de;
+    color: #1a1a1a;
+    transition: border 0.3s ease;
     cursor: pointer;
 }
 
-input[type="radio"] + label {
+select:focus {
+    outline: none;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+}
+
+/* Checkboxes */
+input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+    accent-color: #d4af37;
+}
+
+input[type="checkbox"] + label {
     display: inline-block;
     margin-left: 5px;
     margin-bottom: 15px;
     margin-right: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    cursor: pointer;
 }
 
 /* Botões */
@@ -398,13 +423,13 @@ footer a:hover {
     label {
         font-size: 0.9rem;
     }
+}.check-container {
+    display: flex;                /* label vira flex container */
+    align-items: center;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
 
-    input, textarea {
-        font-size: 16px;
-    }
-
-    button {
-        padding: 10px 20px;
-        font-size: 0.9rem;
-    }
+.check-container input {
+    margin-right: 10px;           /* Espaço entre checkbox e texto */
 }
